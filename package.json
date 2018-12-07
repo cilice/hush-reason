@@ -1,0 +1,24 @@
+{
+  "name": "hush-reason",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cilice/hush-reason.git",
+  "author": "Alexander Plavinski <alexander.plavinski@invision.de>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "reason": "bsb -make-world -w",
+    "start": "parcel src/index.html -p 4000",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "reason-react": "^0.5.3"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.8",
+    "bsb-js": "^1.1.7",
+    "parcel-bundler": "^1.10.3"
+  }
+}
