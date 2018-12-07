@@ -2,9 +2,9 @@
 
 import * as Block from "bs-platform/lib/es6/block.js";
 import * as Curry from "bs-platform/lib/es6/curry.js";
-import * as React from "react";
 import * as ReasonReact from "reason-react/src/ReasonReact.js";
 import * as Courses$HushReason from "./Courses.bs.js";
+import * as CourseDetail$HushReason from "./CourseDetail.bs.js";
 import * as SelectCourses$HushReason from "./SelectCourses.bs.js";
 
 var component = ReasonReact.reducerComponent("App");
@@ -42,7 +42,7 @@ function make(_children) {
           /* render */(function (self) {
               var match = self[/* state */1][/* course */0];
               if (match !== undefined) {
-                return React.createElement("div", undefined, match[/* title */1]);
+                return ReasonReact.element(undefined, undefined, CourseDetail$HushReason.make(match, /* array */[]));
               } else {
                 return ReasonReact.element(undefined, undefined, SelectCourses$HushReason.make(/* array */[]));
               }

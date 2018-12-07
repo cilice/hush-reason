@@ -49,7 +49,7 @@ let make = _children => {
   render: self => {
     switch (self.state.course) {
     | None => <SelectCourses />
-    | Some(exercise) => <div> {ReasonReact.string(exercise.title)} </div>
+    | Some(exercise) => <CourseDetail exercise />
     };
   },
 };
